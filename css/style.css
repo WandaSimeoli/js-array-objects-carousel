@@ -5,6 +5,42 @@
     box-sizing: border-box;
 }
 .container {
-    max-width: 1170px;
-    margin: 0 auto;
+   margin: 0 auto; 
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+} 
+.content {
+    width: 400px;
+    height: 400px;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+img {
+    width: 100%;
+}
+.item {
+    display: none;
+    object-fit: cover;
+}
+.pre {
+    position: absolute;
+    top: 0;
+    transform: translate(-50%);
+}
+.post {
+    position: absolute;
+    bottom: 0;  
+    transform: translate(-50%);
+}
+button {
+    width: 20px;
+   border-radius: 10px; 
+   background-color: lightgray;
+}
+.item.active  {
+    display: block;
 }
